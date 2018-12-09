@@ -6,4 +6,5 @@ package com.hapi.proxy.dynamic;
 public interface Person {
     //…œΩª∞‡∑—
     void giveMoney();
+    void giveJob();
 }

@@ -16,7 +16,7 @@ public class Clone {
         student2.setName("ls");
         student2.setAge(16);
 
-        List<Student> students = new ArrayList<>();
+        List<Student> students = new ArrayList<Student>();
         students.add(student1);
         students.add(student2);
 

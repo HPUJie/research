@@ -18,7 +18,7 @@ public class Test {
      * 固定频率
      */
     public static void excuteWithFixdRate(){
-        AtomicInteger atomicInteger = new AtomicInteger(0);
+        final AtomicInteger atomicInteger = new AtomicInteger(0);
         final int[] n = {0};
 
         ScheduledExecutorService executorService = Executors.newScheduledThreadPool(1);

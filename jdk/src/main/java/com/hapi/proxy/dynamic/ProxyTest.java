@@ -20,5 +20,8 @@ public class ProxyTest {
 
         //代理执行上交班费的方法
         stuProxy.giveMoney();
+
+        //代理执行上交班费的方法
+        stuProxy.giveJob();
     }
 }

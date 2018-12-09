@@ -18,4 +18,8 @@ public class Student implements Person {
         }
         System.out.println(name + "上交班费50元");
     }
+
+    public void giveJob() {
+        System.out.println(name + "上交作业");
+    }
 }
