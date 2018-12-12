@@ -16,5 +16,19 @@
 	      or "deployment". If no configuration is found, "development" is the default.
 	-->
 
+	<filter>
+		<filter-name>wicket.netty</filter-name>
+ 		<filter-class>org.apache.wicket.protocol.http.WicketFilter</filter-class>
+		<init-param>
+			<param-name>applicationClassName</param-name>
+			<param-value>com.hapi.WicketApplication</param-value>
+ 		</init-param>
+ 	</filter>
+
+ <filter-mapping>
+  <filter-name>wicket.netty</filter-name>
+	<url-pattern>/*</url-pattern>
+ </filter-mapping>
+
 
 </web-app>

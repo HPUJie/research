@@ -10,6 +10,7 @@
     <modules>
         <module>jdk</module>
         <module>zk</module>
+        <module>netty</module>
     </modules>
     <!-- TODO project name  -->
 	<name>quickstart</name>

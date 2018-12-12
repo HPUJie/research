@@ -22,6 +22,7 @@ public class ServerHandle implements Runnable {
 
     private Selector selector;
     private ServerSocketChannel serverChannel;
+    private ServerSocketChannel serverChannel2;
     private volatile boolean started;
 
     public ServerHandle(int port) {
@@ -33,6 +34,7 @@ public class ServerHandle implements Runnable {
             serverChannel.configureBlocking(false);//开启非阻塞模式
             //绑定端口backlog设为1024
             serverChannel.socket().bind(new InetSocketAddress(port), 1024);
+
             //监听客户端连接请求
             serverChannel.register(selector, SelectionKey.OP_ACCEPT);
             //标记服务器已开启
